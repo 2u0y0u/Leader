@@ -24,8 +24,9 @@ Leader正确运行需要三个文件：Leader.exe（主程序）、conf.json（�
   * 等于Menu时，将该栏目定义为菜单栏，其子菜单内容为`dict[key][Menu]`中的内容。
   * 等于App时，将该栏目定义为普通菜单，`dict[key][Path]`指定的文件、文件夹、可执行程序的路径，`dict[key][Action]`指定的执行的动作，如当Action为“start”，Path为“F:/test”时，即为打开F盘中的test文件夹；当Action为“typora”，Path为“F:/test/test.md”时，即为通过typora打开F盘中的test文件夹下test.md文档（typora程序路径需添加到环境变量path中）;当Action为“”（空），Path为“F:/test/test.exe”时，即为打开F盘中的test文件夹下的test.exe程序（jar可执行文件等同）
   
-###配置文件实例
-```{
+### 配置文件实例
+```
+{
 'Jar':{
         'Path':r'F:\test.jar',
         'action':'',
@@ -49,7 +50,8 @@ Leader正确运行需要三个文件：Leader.exe（主程序）、conf.json（�
                             }
                 },
         'Attr':'Menu'}
-}```
+}
+```
 
 此时，Leader将依次生成以下菜单栏：
 * Jar  (一个普通菜单,点击打开test.jar程序)
@@ -61,5 +63,5 @@ Leader正确运行需要三个文件：Leader.exe（主程序）、conf.json（�
   * test.md   (MarkDown的子菜单，一个普通菜单，点击通过typora打开test.md)
   
   
-### 推送建议
+### 如有建议
 作者QQ:1026378409
