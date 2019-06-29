@@ -9,7 +9,7 @@ Leader是使用wxpython编写,通过pyinstaller打包的。由于水平有限，
 ### 工具运行原理
 Leader正确运行需要三个文件（放置于同一目录下）：Leader.exe（主程序）、conf.json（配置文件）、logo.ico（图标）
 
-每次打开Leader,程序将读取conf.json文件的内容（ 通过eval(open('conf.json','r').read() ) 方式将配置内容转换为字典类型数据）动态生成小图标菜单栏目，获取logo.ico作为托盘小图标。
+每次打开Leader，程序将读取conf.json文件的内容（ 通过eval(open('conf.json','r').read())方式将配置内容转换为字典类型数据 ）动态生成小图标菜单栏目，获取logo.ico作为托盘小图标。
 
 ### 关于配置文件conf.json
 配置文件conf.json中的内容需符合字典格式。
