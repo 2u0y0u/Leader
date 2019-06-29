@@ -16,7 +16,9 @@ Leader正确运行需要三个文件：Leader.exe（主程序）、conf.json（�
 
 字典Key与value的格式：
 * key
+
   菜单栏的名字
+  
   `dict[key][Attr]`：
   * 等于Menu时，将该栏目定义为菜单栏，其子菜单内容为`dict[key][Menu]`中的内容。
   * 等于App时，将该栏目定义为普通菜单，`dict[key][Path]`指定的文件、文件夹、可执行程序的路径，`dict[key][Action]`指定的执行的动作，如当Action为“start”，Path为“F:/test”时，即为打开F盘中的test文件夹；当Action为“typora”，Path为“F:/test/test.md”时，即为通过typora打开F盘中的test文件夹下test.md文档（typora程序路径需添加到环境变量path中）;当Action为“”（空），Path为“F:/test/test.exe”时，即为打开F盘中的test文件夹下的test.exe程序（jar可执行文件等同）
