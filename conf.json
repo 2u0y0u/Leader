@@ -1,0 +1,26 @@
+#配置文件，请根据实际需要修改相应内容
+{
+'Jar':{
+        'Path':r'F:\test.jar',
+        'Action':'',
+        'Attr':'APP'
+        },
+'Dir':{
+        'Menu':{
+                'test':{
+                            'Path':r'F:\test',
+                            'Action':'start', 
+                            'Attr':'APP'
+                            }
+                },
+        'Attr':'Menu'},
+'MarkDown':{
+        'Menu':{
+                'test.md':{
+                            'Path':r'F:\test\test.md',
+                            'Action':'Typora', 
+                            'Attr':'APP'
+                            }
+                },
+        'Attr':'Menu'}
+}
